@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="loadResume()">
+    <div class="container">
+        <h2>Resume</h2>
+        <div class="resume-container">
+            <!-- Header -->
+            <div class="resume-header">
+                <div class="photo-container">
+                    <img id="resumePhoto" src="" alt="Passport Photo">
+                </div>
+                <div class="basic-info">
+                    <p><strong>Name:</strong> <span id="resumeName"></span></p>
+                    <p><strong>Gender:</strong> <span id="resumeGender"></span></p>
+                    <p><strong>Date of Birth:</strong> <span id="resumeDob"></span></p>
+                    <p><strong>Citizen ID:</strong> <span id="resumeCitizenId"></span></p>
+                    <p><strong>Age:</strong> <span id="resumeAge"></span></p>
+                    <p><strong>Email:</strong> <span id="resumeEmail"></span></p>
+                    <p><strong>Phone:</strong> <span id="resumePhone"></span></p>
+                    <p><strong>Address:</strong> <span id="resumeAddress"></span></p>
+                </div>
+            </div>
+
+            <!-- Resume Sections -->
+            <div class="resume-section">
+                <h3>Summary</h3>
+                <ul id="resumeSummary"></ul>
+            </div>
+
+            <div class="resume-section">
+                <h3>Experience</h3>
+                <ul id="resumeExperience"></ul>
+            </div>
+
+            <div class="resume-section">
+                <h3>Education</h3>
+                <ul id="resumeEducation"></ul>
+            </div>
+
+            <div class="resume-section">
+                <h3>Skills</h3>
+                <ul id="resumeSkills"></ul>
+            </div>
+        </div>
+
+        <button onclick="window.location.href='mainpage.html'">Back</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

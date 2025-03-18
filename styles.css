@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 1200px; /* Limit the maximum width */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem; /* Adjust font size for responsiveness */
+}
+
+form input, form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+form button {
+    margin-right: 10px;
+}
+
+/* Resume Container */
+.resume-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* To position the photo container */
+}
+
+/* Header Section */
+.resume-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    position: relative;
+}
+
+/* Photo Container */
+.photo-container {
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Position the photo at the top-right corner */
+    width: 150px;
+    height: 200px;
+}
+
+.photo-container img {
+    width: 100%; /* Make the image responsive */
+    height: 200px;
+    object-fit: contain;
+    border-radius: 5px;
+    border: 2px solid #000;
+}
+
+/* Basic Info */
+.basic-info {
+    flex: 1;
+    margin-right: 180px; /* Add space to avoid overlapping with the photo */
+}
+
+/* Resume Sections */
+.resume-section {
+    margin-bottom: 20px;
+    page-break-inside: avoid;
+}
+
+.resume-section ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Add rounded corners */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .resume-header {
+        flex-direction: column; /* Stack photo and basic info vertically */
+        align-items: center; /* Center-align for smaller screens */
+        text-align: center;
+    }
+
+    .photo-container {
+        margin: 0 auto 20px auto; /* Center the photo */
+    }
+
+    .basic-info {
+        margin-left: 0; /* Remove left margin for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Reduce font size for smaller screens */
+    }
+
+    button {
+        width: 100%; /* Make buttons full-width */
+        margin-bottom: 10px; /* Add spacing between buttons */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px; /* Reduce padding for very small screens */
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Further reduce font size */
+    }
+
+    .photo-container {
+        width: 120px; /* Reduce photo size */
+        height: 160px;
+    }
+
+    form input, form textarea {
+        padding: 8px; /* Reduce padding for inputs */
+    }
+}

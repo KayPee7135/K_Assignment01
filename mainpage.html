@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Resume Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Resume Generator</h2>
+        <form id="resumeForm">
+            <div class="form-group">
+                <label for="photo">Photo:</label>
+                <input type="file" id="photo" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Full Name" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <input type="text" id="gender" placeholder="Gender" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" placeholder="Date of Birth" required>
+            </div>
+            <div class="form-group">
+                <label for="citizenId">Citizen ID:</label>
+                <input type="text" id="citizenId" placeholder="Citizen ID" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="text" id="age" placeholder="Age" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" placeholder="Phone" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" placeholder="Address" required>
+            </div>
+            <div class="form-group">
+                <label for="summary">Summary:</label>
+                <textarea id="summary" placeholder="Summary" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="experience">Experience:</label>
+                <textarea id="experience" placeholder="Experience" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="education">Education:</label>
+                <textarea id="education" placeholder="Education" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="skills">Skills:</label>
+                <textarea id="skills" placeholder="Skills" required></textarea>
+            </div>
+            <button type="button" onclick="generateResume()">Generate Resume</button>
+            <button type="button" onclick="window.location.href='help.html'">Help</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
